@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --ugham-blue: #0020d8;
+  --ugham-purple: #7928ca;
+  --ugham-magenta: #c0047e;
+}
+
+body {
+  background-color: #ffffff;
+  color: #0f172a;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Brand Utilities */
+.bg-ugham-gradient {
+  background: linear-gradient(135deg, #0020d8 0%, #7928ca 50%, #c0047e 100%);
+}
+
+.bg-ugham-gradient-subtle {
+  background: linear-gradient(135deg, rgba(0, 32, 216, 0.05) 0%, rgba(121, 40, 202, 0.05) 50%, rgba(192, 4, 126, 0.05) 100%);
+}
+
+.text-ugham-gradient {
+  background: linear-gradient(135deg, #0020d8 0%, #7928ca 50%, #c0047e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-ugham-gradient {
+  border-image: linear-gradient(135deg, #0020d8, #c0047e) 1;
+}
+
+.shadow-ugham {
+  box-shadow: 0 10px 30px -10px rgba(0, 32, 216, 0.25);
+}
+
+.shadow-ugham-card {
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(0, 32, 216, 0.04);
+}
+
+/* Safe padding for bottom mobile navigation bar */
+.pb-mobile-nav {
+  padding-bottom: 6.5rem;
+}
+
+@media (min-width: 768px) {
+  .pb-mobile-nav {
+    padding-bottom: 0;
+  }
+}
